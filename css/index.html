@@ -12,22 +12,18 @@
 		  body{font-size:30px;color:red;text-align:center}
 		  /*CSS专用注释方法*/
 		  p{color:green;} /*标签筛选器 这里会自动选择P标签*/
-		  #test{color:#ff66ff;} /*ID筛选器 这里会自动选择ID是test的段落*/
+		  h1,h2,h3,h4,h5,h6.test{color:#ff66ff;font-size:30px} /*ID筛选器 这里会自动选择ID是test的段落*/
 	  </style>
 	  <!--style是样式-->
  </head>
-
  <body>
-	<pre>
-		<p>情书</p>
-<a id="test">
-每个人的心中都藏着一座城，
-藏着晚到的风，
-峰回路转总重逢，
-没有谁会孤独一生。
-……
-你可知
-你的名字 是我写过最美的情书</a>
-</pre>
+	<p>情书</p>
+	<h1 class="test">每个人的心中都藏着一座城，</h1>
+	<h2 class="test">藏着晚到的风，</h2>
+	<h3 class="test">峰回路转总重逢，</h3>
+	<h4 class="test">没有谁会孤独一生。</h4>
+	<h5 class="test">……</h5>
+	<h6 class="test">你可知</h6>
+	<div class="test">你的名字 是我写过最美的情书</div>
  </body>
 </html>
