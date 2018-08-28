@@ -18,20 +18,24 @@
 			a:hover{color:blue}/*指针移动到超链接显示*/
 			a:active{color:#ffffff}/*点击中的超链接显示*/
 	  </style>
-
 	  <!--style是样式-->
  </head>
  <body>
 	经过蛙神的计算<br>
-	七夕的约会就决定是<script type="text/javascript">
-<!--
-var len=2;//提示文字数，为了例子简单，所以只设3段文字
-var rnd=Math.floor(Math.random()*len);
-var txt=new Array(len);
-txt[0]="今晚了";
-txt[1]="明晚了";
-document.write(txt[rnd]);
-//-->
-</script>
+	冥冥中注定的答案就是
+	<div id="show"></div>
+	<script type="text/javascript">
+		function run(){
+		var a=[];
+		var obj=document.getElementById("suiji").getElementsByTagName("input");  
+		for(var i=0;i<obj.length;i++){
+			if(obj[i].value.length>0){
+				a.push(obj[i].value);
+			}
+		}
+		var i = Math.floor(Math.random() * a.length+ 1)-1;
+		document.getElementById("show").innerHTML=a[i];
+		}
+	</script>
 </body>
 </html>
