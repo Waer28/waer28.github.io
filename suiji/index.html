@@ -1,57 +1,150 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
- <head>
-	  <!--head是网页头部-->
-	  <title>css练习页面</title>
-	  <!--title是浏览器标签显示的名字-->
-	  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-	  <!--http-equiv服务器指定网页用什么编码打开 content指定修改text下html文件 charset修改为UTF-8-->
-	  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://raw.githubusercontent.com/Waer28/waer28.github.io/master/LOGO.ico">
-	  <!--link的icon是指定网站小图标-->
-	  <style type="text/css">
-		body{font-size:30px;color:red;text-align:center}
-		/*CSS专用注释方法*/
-		p{color:green;} /*标签筛选器 这里会自动选择P标签*/
-		h1,h2,h3,h4,h5,h6.test{color:#ff66ff;font-size:30px} /*ID筛选器 这里会自动选择ID是test的段落*/
-			a:link{color:red;}/*未点击过的超链接显示*/
-			a:visited{color:#330033}/*点击过的超链接显示*/
-			a:hover{color:blue}/*指针移动到超链接显示*/
-			a:active{color:#ffffff}/*点击中的超链接显示*/
-	  </style>
-	  <!--style是样式-->
- </head>
- <body>
- 请提供你需要蛙神计算的选项
-	<p id="suiji">
-		<input type="text" value="请输入提供给蛙神计算的选项" onclick="this.value='';focus()">
-		<input type="text" value="请输入提供给蛙神计算的选项" onclick="this.value='';focus()">
-		<input type="text" value="请输入提供给蛙神计算的选项" onclick="this.value='';focus()">
-		<input type="text" value="请输入提供给蛙神计算的选项" onclick="this.value='';focus()">
-	</p>
-	<div style="text-align:center; margin-top:100px;width:100%;">
-			<div style="margin-top:20px;">
-				<input id="bt" type="button" onclick="run()" value="开始随机"/>
-			</div>
-	</div>
-	经过蛙神的计算<br>
-	冥冥中注定的答案就是
-	<div id="show"></div>
-	<script type="text/javascript">
-		function run(){
-		var a=[];
-		var obj=document.getElementById("suiji").getElementsByTagName("input");  
-		for(var i=0;i<obj.length;i++){
-			if(obj[i].value.length>0){
-				a.push(obj[i].value);
-			}
-		}
-		var i = Math.floor(Math.random() * a.length+ 1)-1;
-		document.getElementById("show").innerHTML=a[i];
-		}
-	</script>
+<!--页头声明-->
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+	<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+	<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+	<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<!--http-equiv服务器指定网页用什么编码打开 content指定修改text下html文件 charset修改为UTF-8-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Waer个人主页</title>
+		<!--title是浏览器标签显示的名字-->
 
-	<form>
-<input type="text" value="点这里" onclick="this.value='';focus()">
-</form>
-</body>
-</html>
+		<meta name="keywords" content="Waer，waer28，" /> 
+		<!--keywords是指定本网页相关关键词-->
+		<meta name="description" content="這是Waer的個人首頁，他正在努力學習怎麼做一個網頁！" />
+		<!--description是搜索引擎抓取的介绍文本-->
+		<link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://raw.githubusercontent.com/Waer28/waer28.github.io/master/LOGO.ico">
+		<!--link的icon是指定网站小图标-->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+		<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	
+		<!-- Facebook and Twitter integration -->
+		<meta property="og:title" content=""/>
+		<meta property="og:image" content=""/>
+		<meta property="og:url" content=""/>
+		<meta property="og:site_name" content=""/>
+		<meta property="og:description" content=""/>
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:card" content="" />
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+		
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="../css/animate.css">
+		<!-- Icomoon Icon Fonts-->
+		<link rel="stylesheet" href="../css/icomoon.css">
+		<!-- Bootstrap  -->
+		<link rel="stylesheet" href="../css/bootstrap.css">
+		<!-- Superfish -->
+		<link rel="stylesheet" href="../css/superfish.css">
+		<!-- Flexslider  -->
+		<link rel="stylesheet" href="../css/flexslider.css">
+
+		<link rel="stylesheet" href="../css/style.css">
+
+
+		<!-- Modernizr JS -->
+		<script src="../js/modernizr-2.6.2.min.js"></script>
+		<!-- FOR IE9 below -->
+		<!--[if lt IE 9]>
+		<script src="../js/respond.min.js"></script>
+		<![endif]-->
+
+		</head>
+	<body>
+		<header id="fh5co-header" role="banner">
+			<div class="container text-center">
+				<div id="fh5co-logo">
+					<a name="up" href="javascript:void(0)" onclick="alert('哇！你点我干什么！')""><img src="../images/logo.png" alt="这个图片坏掉了！"></a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="../index.html">首页</a></li>
+						<li><a href="#">其他栏目</a></li>
+						<li><a href="#">其他栏目</a></li>
+						<li><a href="#">站长信息</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+<!-- 页面主体部分 -->
+	<div class="container text-center">
+			<p>请提供你需要蛙神计算的选项</p>
+			<p id="suiji">
+				<input type="text" value="请输入提供给蛙神计算的选项" onclick="this.value='';focus()">
+				<input type="text" value="请输入提供给蛙神计算的选项" onclick="this.value='';focus()">
+				<input type="text" value="请输入提供给蛙神计算的选项" onclick="this.value='';focus()">
+			 </p>
+			<div style="text-align:center; margin-top:100px;width:100%;">
+					<div style="margin-top:20px;">
+						<input id="bt" type="button" onclick="run()" value="开始随机"/>
+					 </div>
+			 </div>
+			<p>经过蛙神的计算<br>
+			冥冥中注定的答案就是</p>
+			<div class="masked" id="show" style="font-size:20pt;font-weight: 600;font-family:Microsoft YaHei"></div>
+			<!-- 输出结果的效果在STYLE修改 -->
+			<script type="text/javascript">
+				function run(){
+				var a=[];
+				var obj=document.getElementById("suiji").getElementsByTagName("input");  
+				for(var i=0;i<obj.length;i++){
+					if(obj[i].value.length>0){
+						a.push(obj[i].value);
+					}
+				}
+				var i = Math.floor(Math.random() * a.length+ 1)-1;
+				document.getElementById("show").innerHTML=a[i];
+				}
+			 </script>
+			 <style>
+					.masked{
+						text-align: center;
+						background-image: -webkit-linear-gradient(left, #b2ffff, #ff7fff 25%, #7fffff 50%, #bf7fff 75%, #b2ffff);
+						-webkit-text-fill-color: transparent;
+						-webkit-background-clip: text;
+						-webkit-background-size: 20% 100%;
+						-webkit-animation: masked-animation 3s infinite linear;
+					  }
+					@-webkit-keyframes masked-animation {
+						 0%{ background-position: 0 0;}
+						 100% { background-position: -100% 0;}
+					}
+				</style>
+		  </div>
+<!-- 页尾部分 -->
+
+		<footer id="fh5co-footer" role="contentinfo">
+			<div class="container-fluid">
+				<div class="footer-content">
+					<div class="copyright"><small>&copy; 版权 属于Waer个人所有<br>代码可供学习使用      请勿用于商业行为</small></div>
+					<div class="social">
+						<a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=674903396&website=www.oicqzone.com"><i class="icon-message"></i></a>
+						<a href="#up"><i class="icon-up"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END #fh5co-footer -->
+		
+		<!-- jQuery -->
+		<script src="../js/jquery.min.js"></script>
+		<!-- Bootstrap -->
+		<script src="../js/bootstrap.min.js"></script>
+		<!-- masonry -->
+		<script src="../js/jquery.masonry.min.js"></script>
+		<!-- MAIN JS -->
+		<script src="../js/main.js"></script>
+	    </body>
+ </html>
