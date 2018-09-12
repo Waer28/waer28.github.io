@@ -230,7 +230,7 @@
           'filter': "alpha(opacity=100)",
           'opacity': 1
         })
-      }).bind(this), 30)
+      }).bind(this), 10)
 
       this._transform()
     },

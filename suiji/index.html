@@ -6,6 +6,18 @@
 	<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
+
+			<script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?59d0ae87fd2fb3a8d7adafc2668ef9e8";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+			</script>
+			<!--页面统计代码-->
+
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 		<!--http-equiv服务器指定网页用什么编码打开 content指定修改text下html文件 charset修改为UTF-8-->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -82,9 +94,9 @@
 	<div class="container text-center">
 			<p>请提供你需要蛙神计算的选项</p>
 			<p id="suiji">
-				<input type="text" value="请输入提供给蛙神计算的选项" onclick="this.value='';focus()">
-				<input type="text" value="请输入提供给蛙神计算的选项" onclick="this.value='';focus()">
-				<input type="text" value="请输入提供给蛙神计算的选项" onclick="this.value='';focus()">
+				<input type="text" value="请提供选项给蛙神计算" onclick="this.value='';focus()" onkeydown="this.onkeyup();" onkeyup="this.size=(this.value.length>20?this.value.length:20);" size="20">
+				<input type="text" value="请提供选项给蛙神计算" onclick="this.value='';focus()" onkeydown="this.onkeyup();" onkeyup="this.size=(this.value.length>20?this.value.length:20);" size="20">
+				<input type="text" value="请提供选项给蛙神计算" onclick="this.value='';focus()" onkeydown="this.onkeyup();" onkeyup="this.size=(this.value.length>20?this.value.length:20);" size="20">
 			 </p>
 			<div style="text-align:center; margin-top:100px;width:100%;">
 					<div style="margin-top:20px;">
