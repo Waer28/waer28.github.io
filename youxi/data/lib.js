@@ -1462,8 +1462,7 @@ function beforeGameObj(){
 		$("div[class='container-fluid']").append(newElement("div","beforeGame","","",""));
 
 		$("#beforeGame").append("<p></p>");
-		//$("#beforeGame p").append(newElement("button", "newPlay", "", "btn btn-default", "新建"));
-		//$("#beforeGame p").append(newElement("button", "load", "", "btn btn-default", "读取"));
+		$("#beforeGame p").append(newElement("button", "newPlay", "", "btn btn-default", "新建"));
 		var savecookie;
 		if(window.localStorage != undefined){
 			savecookie = localStorage.getItem("autosave");
@@ -1864,7 +1863,7 @@ function pauseView(){
 	if($(".tab-pane.active").attr("id")=="map" && $("#map").attr("place")=="home"){
 		$("#pauseDiv").append(newElement("button", "save", "", "btn btn-default", "保存"));
 	}
-	//$("#pauseDiv").append(newElement("button", "load", "", "btn btn-default", "读取"));
+	$("#pauseDiv").append(newElement("button", "load", "", "btn btn-default", "读取"));
 	$("#pauseDiv").append("<a href='https://waer28.github.io/youxi/shuoming' target='_blank' class='btn btn-default'>说明</a>");
 	
 	$("#close").click(function(){
@@ -1944,7 +1943,7 @@ function pauseView(){
 		
 	}
 	layer.empty();
-	layer.append("<div class='info' style='text-align:left;'>请使用自定义的用户名和密码进行保存和读取，无须注册。</div>");
+	layer.append("<div class='info' style='text-align:left;'>在现存档功能尚未有能力开发，等我学会了在搞。</div>");
 	layer.append(newElement("div", "username", "", "slView", "用户名:<input type='text' class='form-control'/>"));
 	layer.append("<br>");
 	layer.append(newElement("div", "pwd", "", "slView", "密码:<input type='password' class='form-control'/>"));
@@ -2225,7 +2224,7 @@ function death(){
 	$("#pauseDiv").append("<span style='font-size:1.2em;'>"+deathInfo+"</span><br>");
 	$("#pauseDiv").append(newElement("button", "again", "", "btn btn-default", "重玩"));
 	$("#pauseDiv").append(showAD("messageAD"));
-	//$("#pauseDiv").append(newElement("button", "load", "", "btn btn-default", "读取"));
+	$("#pauseDiv").append(newElement("button", "load", "", "btn btn-default", "读取"));
 	
 	$("#load").click(function(){slView("load");});
 
