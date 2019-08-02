@@ -1864,8 +1864,8 @@ function pauseView(){
 	if($(".tab-pane.active").attr("id")=="map" && $("#map").attr("place")=="home"){
 		$("#pauseDiv").append(newElement("button", "save", "", "btn btn-default", "保存"));
 	}
-	$("#pauseDiv").append(newElement("button", "load", "", "btn btn-default", "读取"));
-	$("#pauseDiv").append("<a href='http://tinywaste.lofter.com/post/1dd2c191_9e5eeff' target='_blank' class='btn btn-default'>说明</a>");
+	//$("#pauseDiv").append(newElement("button", "load", "", "btn btn-default", "读取"));
+	$("#pauseDiv").append("<a href='https://waer28.github.io/youxi/shuoming' target='_blank' class='btn btn-default'>说明</a>");
 	
 	$("#close").click(function(){
 		$("#pauseDiv").fadeOut(500, function(){
@@ -1931,7 +1931,7 @@ function pauseView(){
 	}
 }
 
-function slView(mode, flag){
+//function slView(mode, flag){
 	var layer = $("#pauseDiv");
 	if(flag != null){
 		$("#beforeGame").html("<div id='buildDiv'></div>");
