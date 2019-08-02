@@ -1463,6 +1463,7 @@ function beforeGameObj(){
 
 		$("#beforeGame").append("<p></p>");
 		$("#beforeGame p").append(newElement("button", "newPlay", "", "btn btn-default", "新建"));
+		$("#beforeGame p").append(newElement("button", "load", "", "btn btn-default", "读取"));
 		var savecookie;
 		if(window.localStorage != undefined){
 			savecookie = localStorage.getItem("autosave");
