@@ -1865,7 +1865,7 @@ function pauseView(){
 		$("#pauseDiv").append(newElement("button", "save", "", "btn btn-default", "保存"));
 	}
 	$("#pauseDiv").append(newElement("button", "load", "", "btn btn-default", "读取"));
-	$("#pauseDiv").append("<a href='https://waer28.github.io/youxi/shuoming' target='_blank' class='btn btn-default'>说明</a>");
+	$("#pauseDiv").append("<a href='https://waer28.github.io/youxi/shuoming.html' target='_blank' class='btn btn-default'>说明</a>");
 	
 	$("#close").click(function(){
 		$("#pauseDiv").fadeOut(500, function(){
