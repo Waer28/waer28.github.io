@@ -22,7 +22,7 @@ function loader(){
         return;
     }
     var LOAD_LIST = ["item", "status", "work", "map", "creep", "lib", "action"];
-    var LOAD_INFO = ["孵化蟑螂", "散布辐射尘", "增殖肿瘤细胞", "编写命运", "什么也没在做", "种植杂草", "放置石块", "制造人类躯壳", "轮回网运转中", "调整反应堆参数", "检查避难所管理系统", "生成工具蓝图", "重置下界数据库"];
+    var LOAD_INFO = ["孵化蟑螂", "散布辐射尘", "增殖肿瘤细胞", "编写命运", "什么也没在做", "种植杂草", "放置石块", "制造人类躯壳", "轮回网运转中", "调整反应堆参数", "检查避难所管理系统", "生成工具蓝图", "重置下界数据库", "乘骑心爱的马马"];
 
     $("#overlay").show();
     $("#overlay").append('<div id="loadGame"><div class="loadingBar"></div></div>');
