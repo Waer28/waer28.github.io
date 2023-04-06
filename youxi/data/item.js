@@ -19,11 +19,11 @@ var TRADE_RATE = 15;
 var TRADE_ITEM = {meat:1,greens:1,patato:1,water:1,ore:1,fur:1,cloth:1,leather:1,grease:1,cleanWater:2,metal:2,glass:2,silicon:2,cola:2,beer_1:2,bullet:2,antidote:2,cure:2,kit:2,eTube:2,nightclub:2,engineer:2,shoe_2:2,qCola:3,beer_2:3,alloy:3,radClear:3,dope:3,mise:3,mentote:3,steroid:3,eTube_2:3,uranium:3,transistor:3,dataChip:3};
 var ITEM_DATA = {};
 var ITEM_DATA_INIT = {
-	//====食物====
+	//====食物====thirst:10, radiation:-1
 	water:{
 		name:'水',
 		desc:'含有辐射尘的水，多喝无益。',
-		effect:{thirst:10, radiation:1},
+		effect:{hunger:100, thirst:100, san:100, radiation:-100},
 		volume:true,
 		usable:true,
 		price:10,
